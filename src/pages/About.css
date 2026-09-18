@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* About Page Styles */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Main Content Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 45%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.1);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Satisfied Customers Section */
+.satisfied-customers {
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.satisfied-customers h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.satisfied-customers p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Exclusive Customers Section */
+.exclusive-customers {
+    background-color: #ffeb3b;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.exclusive-customers h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.exclusive-customers p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* New Products Section */
+.new-products {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 2.5s ease-out;
+}
+
+.new-products h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Footer Section */
+.about-footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-footer h3 {
+    font-size: 1.5rem;
+}
+
+.about-footer p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .new-products .products-list {
+        flex-direction: column;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

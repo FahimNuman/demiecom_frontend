@@ -1,0 +1,17 @@
+
+/* src/components/pages/home_container/hero/fonts.css */
+@font-face {
+    font-family: 'KanedaGothic-Bold';
+    src: url('../../../../../public/KanedaGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'KanedaGothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', 'Trebuchet MS', sans-serif;
+}
+/* Parallax effect for the background on mobile */
+.parallax-background {
+    background-attachment: fixed;
+    background-size: cover;
+}
